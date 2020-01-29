@@ -4,6 +4,8 @@ char	*al_strcpy(char *dest, const char *src)
 {
 	size_t	i;
 
+	if(dest == NULL || src == NULL)
+		return (dest);
 	i = 0;
 	while(src[i] != '\0')
 	{
@@ -18,6 +20,8 @@ char	*al_strncpy(char *dest, const char *src, size_t n)
 {
 	size_t	i;
 
+	if(dest == NULL || src == NULL)
+		return (dest);
 	i = 0;
 	while(src[i] != '\0' && i < n)
 	{
