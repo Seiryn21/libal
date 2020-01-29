@@ -9,8 +9,10 @@ OBJ_DIR = obj/
 INC_DIR = includes/
 
 SRC_FILES = str/al_strcat.c \
+			str/al_strcmp.c \
 			str/al_strcpy.c \
 			str/al_strdup.c \
+			str/al_strequ.c \
 			str/al_strlen.c \
 			str/al_strnew.c \
 
@@ -24,8 +26,8 @@ $(NAME) : $(OBJ_DIR) $(OBJS)
 	@ar -rc $(NAME) $(OBJS)
 
 $(OBJ_DIR):
-	@mkdir $(OBJ_DIR)
-	@mkdir $(dir $(OBJS))
+	@mkdir -p $(OBJ_DIR)
+	@mkdir -p $(dir $(OBJS))
 
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c  | $(OBJ_DIR)
 	@echo Make $<
