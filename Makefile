@@ -8,7 +8,10 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = includes/
 
-SRC_FILES = str/al_strcat.c \
+SRC_FILES = mem/al_memalloc.c \
+			mem/al_memcpy.c \
+			mem/al_memdel.c \
+			str/al_strcat.c \
 			str/al_strcmp.c \
 			str/al_strcpy.c \
 			str/al_strdel.c \
@@ -26,11 +29,14 @@ $(NAME) : $(OBJ_DIR) $(OBJS)
 	@echo Make $(NAME)
 	@ar -rc $(NAME) $(OBJS)
 
-$(OBJ_DIR):
+$(OBJ_DIR): $(dir $(OBJS))
 	@mkdir -p $(OBJ_DIR)
-	@mkdir -p $(dir $(OBJS))
 
-$(OBJ_DIR)%.o : $(SRC_DIR)%.c  | $(OBJ_DIR)
+$(OBJ_DIR)%/:
+	@echo Make $@
+	@mkdir -p $@
+
+$(OBJ_DIR)%.o : $(SRC_DIR)%.c | $(OBJ_DIR)
 	@echo Make $<
 	@$(CC) $(FLAGS) -I $(INC_DIR) -o $@ -c $<
 

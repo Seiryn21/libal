@@ -8,5 +8,6 @@
 
 #include "str.h"
 #include "mem.h"
+#include "lst.h"
 
 #endif
