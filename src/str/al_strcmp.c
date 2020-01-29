@@ -1,4 +1,4 @@
-#include "libal.h"
+#include "str.h"
 
 int	al_strcmp(const char *s1, const char *s2)
 {

@@ -8,6 +8,8 @@ int		al_strcmp(const char *s1, const char *s2);
 int		al_strnequ(const char *s1, const char *s2, size_t n);
 int		al_strncmp(const char *s1, const char *s2, size_t n);
 
+void	al_strdel(char *str);
+
 char	*al_strnew(size_t size);
 char	*al_strdup(const char *src);
 char	*al_strcpy(char *dest, const char *src);

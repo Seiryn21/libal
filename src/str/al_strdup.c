@@ -1,4 +1,4 @@
-#include "libal.h"
+#include "str.h"
 
 char	*al_strdup(const char *src)
 {

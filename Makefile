@@ -11,6 +11,7 @@ INC_DIR = includes/
 SRC_FILES = str/al_strcat.c \
 			str/al_strcmp.c \
 			str/al_strcpy.c \
+			str/al_strdel.c \
 			str/al_strdup.c \
 			str/al_strequ.c \
 			str/al_strlen.c \

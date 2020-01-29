@@ -1,4 +1,4 @@
-#include "libal.h"
+#include "str.h"
 
 int	al_strequ(const char *s1, const char *s2)
 {

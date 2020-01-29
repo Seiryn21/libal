@@ -1,4 +1,4 @@
-#include "libal.h"
+#include "str.h"
 
 char	*al_strcpy(char *dest, const char *src)
 {
