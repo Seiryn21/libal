@@ -7,5 +7,6 @@
 #include <unistd.h>
 
 #include "str.h"
+#include "mem.h"
 
 #endif
