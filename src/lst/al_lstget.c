@@ -10,7 +10,10 @@ t_list	*al_lstget(t_list *begin, size_t n)
 	i = 0;
 	lst = begin;
 	while(lst->next && i < n)
+	{
 		lst = lst->next;
+		i++;
+	}
 	return (lst);
 }
 

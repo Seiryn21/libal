@@ -1,14 +1,19 @@
 NAME = libal.a
 
-
 CC = gcc
-FLAGS		=	-Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror
 
 SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = includes/
 
-SRC_FILES = mem/al_memalloc.c \
+SRC_FILES = lst/al_lstadd.c \
+			lst/al_lstdel.c \
+			lst/al_lstget.c \
+			lst/al_lstiter.c \
+			lst/al_lstlen.c \
+			lst/al_lstnew.c \
+			mem/al_memalloc.c \
 			mem/al_memcpy.c \
 			mem/al_memdel.c \
 			str/al_strcat.c \
@@ -45,5 +50,7 @@ clean :
 
 fclean : clean
 	@rm -rf $(OBJ_DIR)
+
+re: fclean all
 
 .PHONY: all clean fclean re
