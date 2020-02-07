@@ -17,6 +17,7 @@ SRC_FILES = lst/al_lstadd.c \
 			mem/al_memcpy.c \
 			mem/al_memdel.c \
 			str/al_strcat.c \
+			str/al_strchr.c \
 			str/al_strcmp.c \
 			str/al_strcpy.c \
 			str/al_strdel.c \
@@ -30,16 +31,13 @@ OBJS = $(addprefix $(OBJ_DIR), $(SRC_FILES:.c=.o))
 
 all : $(NAME)
 
-$(NAME) : $(OBJ_DIR) $(OBJS)
+$(NAME) : $(OBJS)
 	@echo Make $(NAME)
 	@ar -rc $(NAME) $(OBJS)
 
-$(OBJ_DIR): $(dir $(OBJS))
+$(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
-
-$(OBJ_DIR)%/:
-	@echo Make $@
-	@mkdir -p $@
+	@mkdir -p $(dir $(OBJS))
 
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c | $(OBJ_DIR)
 	@echo Make $<

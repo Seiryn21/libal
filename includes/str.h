@@ -12,6 +12,8 @@ void	al_strdel(char *str);
 
 char	*al_strnew(size_t size);
 char	*al_strdup(const char *src);
+char	*al_strchr(const char *src, char c);
+char	*al_strrchr(const char *src, char c);
 char	*al_strcpy(char *dest, const char *src);
 char	*al_strcat(char *dest, const char *src);
 char	*al_strncpy(char *dest, const char *src, size_t n);
