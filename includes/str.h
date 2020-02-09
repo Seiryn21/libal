@@ -17,7 +17,7 @@ char	*al_strrchr(const char *src, char c);
 char	*al_strcpy(char *dest, const char *src);
 char	*al_strcat(char *dest, const char *src);
 char	*al_strncpy(char *dest, const char *src, size_t n);
-char	*al_strncpy(char *dest, const char *src, size_t n);
+char	*al_strncat(char *dest, const char *src, size_t n);
 
 
 size_t 	al_strlen(const char *src);

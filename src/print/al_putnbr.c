@@ -10,6 +10,7 @@ void al_putnbr_fd(int nbr, int fd)
 	char c;
 
 	c = '0' + (nbr % 10);
-	al_putnbr_fd(nbr / 10, fd);
+	if(nbr > 9)
+		al_putnbr_fd(nbr / 10, fd);
 	write(fd, &c, 1);
 }
