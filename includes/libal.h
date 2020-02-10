@@ -9,6 +9,7 @@
 #include "str.h"
 #include "mem.h"
 #include "lst.h"
+#include "math.h"
 #include "print.h"
 
 #endif
