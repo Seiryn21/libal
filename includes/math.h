@@ -14,6 +14,11 @@ typedef struct	s_vec3
 	float		v[3];
 }				t_vec3;
 
+typedef struct	s_vec4
+{
+	float		v[4];
+}				t_vec4;
+
 typedef struct	s_mat4
 {
 	float		m[16];
@@ -38,16 +43,20 @@ t_vec3			al_vec3_add(t_vec3 a, t_vec3 b);
 t_vec3			al_vec3_sub(t_vec3 a, t_vec3 b);
 t_vec3 			al_vec3_crossproduct(t_vec3 a, t_vec3 b);
 
+t_vec4			al_vec4_from_vec3(t_vec3 a);
+
 t_mat4			al_mat4_empty();
 t_mat4			al_mat4_identity();
 t_mat4			al_mat4_mult(t_mat4 a, t_mat4 b);
 t_mat4			al_mat4_rotatex(float theta);
 t_mat4			al_mat4_rotatey(float theta);
 t_mat4			al_mat4_rotatez(float theta);
-t_mat4			al_mat4_scale(float x, float y, float z);
-t_mat4			al_mat4_translate(float x, float y, float z);
+t_mat4			al_mat4_scale(t_vec3 scale);
+t_mat4			al_mat4_translate(t_vec3 pos);
 t_mat4			al_mat4_lookat(t_vec3 from, t_vec3 to);
 t_mat4 			al_mat4_projection(float near, float far, float fov, float aspect);
+
+t_vec4			al_mat4_mult_vec4(t_mat4 mat, t_vec4 vec);
 
 
 #endif

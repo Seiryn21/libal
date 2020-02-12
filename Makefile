@@ -15,19 +15,21 @@ SRC_FILES = lst/al_lstadd.c \
 			lst/al_lstnew.c \
 			math/mat4/al_mat4_init.c \
 			math/mat4/al_mat4_lookat.c \
+			math/mat4/al_mat4_mult_vec4.c \
 			math/mat4/al_mat4_mult.c \
 			math/mat4/al_mat4_projection.c \
 			math/mat4/al_mat4_rotate.c \
 			math/mat4/al_mat4_scale.c \
 			math/mat4/al_mat4_translate.c \
-			math/vec3/al_vec3_add.c \
-			math/vec3/al_vec3_div.c \
-			math/vec3/al_vec3_init.c \
-			math/vec3/al_vec3_len.c \
-			math/vec3/al_vec3_mult.c \
-			math/vec3/al_vec3_norm.c \
-			math/vec3/al_vec3_product.c \
-			math/vec3/al_vec3_sub.c \
+			math/vec/al_vec3_add.c \
+			math/vec/al_vec3_div.c \
+			math/vec/al_vec3_init.c \
+			math/vec/al_vec3_len.c \
+			math/vec/al_vec3_mult.c \
+			math/vec/al_vec3_norm.c \
+			math/vec/al_vec3_product.c \
+			math/vec/al_vec3_sub.c \
+			math/vec/al_vec4_from_vec3.c \
 			math/al_abs.c \
 			math/al_cos.c \
 			math/al_pow.c \
