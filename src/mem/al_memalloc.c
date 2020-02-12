@@ -14,6 +14,5 @@ void 	*al_memalloc(size_t n)
 		new[i] = '\0';
 		i++;
 	}
-	new[i] = '\0';
 	return (new);
 }
