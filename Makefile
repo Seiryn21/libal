@@ -17,10 +17,12 @@ SRC_FILES = lst/al_lstadd.c \
 			math/mat4/al_mat4_lookat.c \
 			math/mat4/al_mat4_mult_vec4.c \
 			math/mat4/al_mat4_mult.c \
+			math/mat4/al_mat4_print.c \
 			math/mat4/al_mat4_projection.c \
 			math/mat4/al_mat4_rotate.c \
 			math/mat4/al_mat4_scale.c \
 			math/mat4/al_mat4_translate.c \
+			math/vec/al_vec_print.c \
 			math/vec/al_vec3_add.c \
 			math/vec/al_vec3_div.c \
 			math/vec/al_vec3_init.c \
@@ -43,6 +45,7 @@ SRC_FILES = lst/al_lstadd.c \
 			print/al_putline.c \
 			print/al_putnbr.c \
 			print/al_putstr.c \
+			print/al_putfloat.c \
 			str/al_strcat.c \
 			str/al_strchr.c \
 			str/al_strcmp.c \

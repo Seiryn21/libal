@@ -35,6 +35,8 @@ float			al_pow(float number, int n);
 float			al_vec3_len(t_vec3 a);
 float			al_vec3_dotproduct(t_vec3 a, t_vec3 b);
 
+void			al_vec3_print(t_vec3 a);
+
 t_vec3			al_vec3_init(float x, float y,  float z);
 t_vec3			al_vec3_norm(t_vec3 a);
 t_vec3			al_vec3_div(t_vec3 a, float n);
@@ -43,7 +45,12 @@ t_vec3			al_vec3_add(t_vec3 a, t_vec3 b);
 t_vec3			al_vec3_sub(t_vec3 a, t_vec3 b);
 t_vec3 			al_vec3_crossproduct(t_vec3 a, t_vec3 b);
 
+void			al_vec4_print(t_vec4 a);
+
 t_vec4			al_vec4_from_vec3(t_vec3 a);
+
+
+void			al_mat4_print(t_mat4 a);
 
 t_mat4			al_mat4_empty();
 t_mat4			al_mat4_identity();
