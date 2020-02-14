@@ -31,6 +31,7 @@ SRC_FILES = lst/al_lstadd.c \
 			math/vec/al_vec3_norm.c \
 			math/vec/al_vec3_product.c \
 			math/vec/al_vec3_sub.c \
+			math/vec/al_vec3_from_vec4.c \
 			math/vec/al_vec4_from_vec3.c \
 			math/al_abs.c \
 			math/al_cos.c \

@@ -1,15 +1,5 @@
 #include "print.h"
 
-static void al_putdec(float f, int prec, int fd)
-{
-	int digit;
-
-	digit = (int)f * 10;
-	al_putchar_fd('0' + digit, fd);
-	if(prec > 0)
-		al_putdec(f * 10 - digit, prec - 1, fd);
-}
-
 void	al_putfloat(float f, int prec)
 {
 	al_putfloat_fd(f, prec, 1);
@@ -18,15 +8,25 @@ void	al_putfloat(float f, int prec)
 
 void	al_putfloat_fd(float f, int prec, int fd)
 {
+	int i;
 	int int_part;
 
-	int_part = (int)f;
-	al_putnbr(int_part);
-	al_putchar('.');
-	f = f - int_part;
 	if(f < 0)
+	{
+		al_putchar_fd('-', fd);
 		f = -f;
-	al_putdec(f, prec, fd);
+	}
+	int_part = (int)f;
+	al_putnbr_fd(int_part, fd);
+	al_putchar_fd('.', fd);
+	i = 0;
+	while(i < prec)
+	{
+		f = (f - int_part) * 10;
+		int_part = (int)f;
+		al_putchar_fd('0' + int_part, fd);
+		i++;
+	}
 }
 
 

@@ -26,4 +26,5 @@ void	al_vec4_print(t_vec4 a)
 		al_putchar(' ');
 		i++;
 	}
+	al_putchar('\n');
 }

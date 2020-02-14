@@ -23,7 +23,7 @@ t_mat4 al_mat4_identity()
 	ret = al_mat4_empty();
 	while(i < 4)
 	{
-		ret.m[i + i * 4] = 0;
+		ret.m[i + i * 4] = 1;
 		i++;
 	}
 	return (ret);
