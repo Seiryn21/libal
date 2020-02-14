@@ -50,12 +50,14 @@ SRC_FILES = lst/al_lstadd.c \
 			str/al_strcat.c \
 			str/al_strchr.c \
 			str/al_strcmp.c \
+			str/al_strcnt.c \
 			str/al_strcpy.c \
 			str/al_strdel.c \
 			str/al_strdup.c \
 			str/al_strequ.c \
 			str/al_strlen.c \
 			str/al_strnew.c \
+			str/al_strsplit.c \
 
 SRCS  = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJS = $(addprefix $(OBJ_DIR), $(SRC_FILES:.c=.o))

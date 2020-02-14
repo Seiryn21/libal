@@ -3,6 +3,7 @@
 
 #include "libal.h"
 
+int		al_strcnt(const char *str, char c);
 int		al_strequ(const char *s1, const char *s2);
 int		al_strcmp(const char *s1, const char *s2);
 int		al_strnequ(const char *s1, const char *s2, size_t n);
@@ -19,6 +20,7 @@ char	*al_strcat(char *dest, const char *src);
 char	*al_strncpy(char *dest, const char *src, size_t n);
 char	*al_strncat(char *dest, const char *src, size_t n);
 
+char 	**al_strsplit(const char *str, char c);
 
 size_t 	al_strlen(const char *src);
 
