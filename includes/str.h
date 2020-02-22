@@ -15,10 +15,12 @@ char	*al_strnew(size_t size);
 char	*al_strdup(const char *src);
 char	*al_strchr(const char *src, char c);
 char	*al_strrchr(const char *src, char c);
+char	*al_strndup(const char *src, size_t n);
 char	*al_strcpy(char *dest, const char *src);
 char	*al_strcat(char *dest, const char *src);
 char	*al_strncpy(char *dest, const char *src, size_t n);
 char	*al_strncat(char *dest, const char *src, size_t n);
+char	*al_strjoin(char *s1, char *s2);
 
 char 	**al_strsplit(const char *str, char c);
 

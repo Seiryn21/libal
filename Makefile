@@ -55,6 +55,7 @@ SRC_FILES = lst/al_lstadd.c \
 			str/al_strdel.c \
 			str/al_strdup.c \
 			str/al_strequ.c \
+			str/al_strjoin.c \
 			str/al_strlen.c \
 			str/al_strnew.c \
 			str/al_strsplit.c \
