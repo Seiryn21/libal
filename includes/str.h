@@ -21,6 +21,7 @@ char	*al_strcat(char *dest, const char *src);
 char	*al_strncpy(char *dest, const char *src, size_t n);
 char	*al_strncat(char *dest, const char *src, size_t n);
 char	*al_strjoin(char *s1, char *s2);
+char	*al_strnjoin(char *s1, char *s2, size_t n);
 
 char 	**al_strsplit(const char *str, char c);
 

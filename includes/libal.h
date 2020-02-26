@@ -13,5 +13,6 @@
 #include "lst.h"
 #include "math.h"
 #include "print.h"
+#include "gnl.h"
 
 #endif

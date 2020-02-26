@@ -59,6 +59,7 @@ SRC_FILES = lst/al_lstadd.c \
 			str/al_strlen.c \
 			str/al_strnew.c \
 			str/al_strsplit.c \
+			get_next_line.c \
 
 SRCS  = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJS = $(addprefix $(OBJ_DIR), $(SRC_FILES:.c=.o))
