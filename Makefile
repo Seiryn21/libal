@@ -1,7 +1,7 @@
 NAME = libal.a
 
 CC = gcc
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -g
 
 SRC_DIR = src/
 OBJ_DIR = obj/

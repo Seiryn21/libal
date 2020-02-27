@@ -17,6 +17,7 @@ static t_gnl_fd	*get_gnl_fd(int fd, t_list **fds)
 	current.buffer = NULL;
 	lst = al_lstnew(&current, sizeof(t_gnl_fd));
 	al_lstadd(fds, lst);
+	return (lst->content);
 }
 
 static int		char_to_append(t_gnl_fd *gnl)

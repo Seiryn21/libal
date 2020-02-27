@@ -14,7 +14,6 @@ char	*al_strnew(size_t n)
 			ret[i] = '\0';
 			i++;
 	}
-	ret[i] = '\0';
 	return (ret);
 
 }
