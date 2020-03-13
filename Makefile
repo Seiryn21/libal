@@ -42,6 +42,7 @@ SRC_FILES = lst/al_lstadd.c \
 			mem/al_memalloc.c \
 			mem/al_memcpy.c \
 			mem/al_memdel.c \
+			mem/al_memset.c \
 			print/al_putchar.c \
 			print/al_putline.c \
 			print/al_putnbr.c \
