@@ -7,7 +7,7 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = includes/
 
-SRC_FILES = lst/al_lstadd.c \
+SRC_FILES =	lst/al_lstadd.c \
 			lst/al_lstdel.c \
 			lst/al_lstget.c \
 			lst/al_lstiter.c \
@@ -48,6 +48,8 @@ SRC_FILES = lst/al_lstadd.c \
 			print/al_putnbr.c \
 			print/al_putstr.c \
 			print/al_putfloat.c \
+			regex/al_regcomp.c \
+			regex/al_regfrag.c \
 			str/al_strcat.c \
 			str/al_strchr.c \
 			str/al_strcmp.c \
@@ -60,7 +62,7 @@ SRC_FILES = lst/al_lstadd.c \
 			str/al_strlen.c \
 			str/al_strnew.c \
 			str/al_strsplit.c \
-			get_next_line.c \
+			get_next_line.c
 
 SRCS  = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJS = $(addprefix $(OBJ_DIR), $(SRC_FILES:.c=.o))

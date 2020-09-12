@@ -14,5 +14,6 @@
 #include "math.h"
 #include "print.h"
 #include "gnl.h"
+#include "regex.h"
 
 #endif
