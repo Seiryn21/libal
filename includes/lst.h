@@ -14,6 +14,7 @@ typedef struct 		s_list
 int		al_lstlen(t_list *begin);
 
 t_list	*al_lstnew(void *const content, size_t content_size);
+t_list	*al_lstnew_ptr(void *const content);
 
 t_list	*al_lstget(t_list *begin, size_t n);
 t_list	*al_lstlast(t_list *begin);
