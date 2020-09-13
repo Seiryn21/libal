@@ -18,6 +18,8 @@ void	al_lstdel_one(t_list **begin, void (*del)(void *, size_t))
 		return;
 	tmp = *begin;
 	*begin = tmp->next;
-	del(tmp->content, tmp->content_size);
+	if(del)
+		del(tmp->content, tmp->content_size);
 	free(tmp);
 }
+
