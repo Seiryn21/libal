@@ -87,18 +87,16 @@ static int al_comp_group(t_regfrag *ret,t_regex *preg, char **regex)
 
 int al_regcomp(t_regex *preg, char *regex, int flags)
 {
+	int len;
 	t_regfrag frag;
-	t_regstate **tab;
 
 	(void)flags;
+	len = al_strlen(regex);
 	preg->statecount = 0;
 	preg->nmatch = 0;
-	preg->states.lst = NULL;
+	preg->states = al_memalloc((len + 1) * sizeof(t_regstate));
 	al_comp_group(&frag, preg, &regex);
 	preg->in = frag.in;
-	tab = (t_regstate**)al_lsttoarray(preg->states.lst);
-	al_lstdel(&(preg->states.lst), NULL);
-	preg->states.tab = tab;
 	return (0);
 }
 

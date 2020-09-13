@@ -24,11 +24,7 @@ typedef struct	s_regex
 	int			nmatch;
 	int 		statecount;
 	t_regstate	*in;
-	union
-	{
-		t_list 		*lst;
-		t_regstate **tab;
-	}			states;
+	t_regstate	*states;
 }				t_regex;
 
 typedef struct	s_regmatch

@@ -2,16 +2,14 @@
 
 static t_regstate *al_create_regstate(t_regex *preg, int type)
 {
-	t_regstate 	new;
-	t_list		*new_lst;
+	t_regstate 	*new;
 
-	new.type = type;
-	new.out = NULL;
-	new.id = preg->statecount;
-	new_lst = al_lstnew(&new, sizeof(t_regstate));
-	al_lstadd(&(preg->states.lst), new_lst);
+	new = &(preg->states[preg->statecount]);
+	new->type = type;
+	new->out = NULL;
+	new->id = preg->statecount;
 	preg->statecount++;
-	return (new_lst->content);
+	return (new);
 }
 
 int al_create_groupfrag(t_regfrag *ret, t_regex *preg)
