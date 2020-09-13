@@ -13,6 +13,7 @@ SRC_FILES =	lst/al_lstadd.c \
 			lst/al_lstiter.c \
 			lst/al_lstlen.c \
 			lst/al_lstnew.c \
+			lst/al_lsttoarray.c \
 			math/mat4/al_mat4_init.c \
 			math/mat4/al_mat4_lookat.c \
 			math/mat4/al_mat4_mult_vec4.c \
