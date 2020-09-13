@@ -30,4 +30,6 @@ void	al_lstdel_one(t_list **begin, void (*del)(void *, size_t));
 
 void	al_lstiter(t_list *begin, void (*iter)(void *, size_t));
 
+void	**al_lsttoarray(t_list *begin);
+
 #endif
