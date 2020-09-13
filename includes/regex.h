@@ -4,27 +4,31 @@
 #include "libal.h"
 
 typedef struct s_list t_list;
+typedef struct s_regstate t_regstate;
 
-typedef struct	s_regstate
+struct			s_regstate
 {
 	int			id;
 	int			type;
 	union	
 	{
-		int flag;
-		int limit[2];
-		char *match;
+		int 	flag;
+		int 	limit[3];
+		char	 *match;
 	};
-	t_list		*out;
-	t_list		*link;
-}				t_regstate;
+	t_regstate	**out;
+};
 
 typedef struct	s_regex
 {
 	int			nmatch;
 	int 		statecount;
 	t_regstate	*in;
-	t_list 		*states;
+	union
+	{
+		t_list 		*lst;
+		t_regstate **tab;
+	}			states;
 }				t_regex;
 
 typedef struct	s_regmatch
@@ -40,8 +44,11 @@ typedef struct	s_regfrag
 }				t_regfrag;
 
 void al_concat_regfrag(t_regfrag *dest, t_regfrag src);
+
 int al_create_groupfrag(t_regfrag *ret, t_regex *preg);
-int al_create_statefrag(t_regfrag *ret, t_regex *preg, char *match);
+int al_create_matchfrag(t_regfrag *ret, t_regex *preg, char *match);
+
+t_regstate *al_create_quantifierstate(t_regex *preg, int min, int max);
 
 
 int al_regcomp(t_regex *preg, char *regex, int flags);
