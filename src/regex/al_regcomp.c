@@ -94,7 +94,7 @@ int al_regcomp(t_regex *preg, char *regex, int flags)
 	len = al_strlen(regex);
 	preg->statecount = 0;
 	preg->nmatch = 0;
-	preg->states = al_memalloc((len + 1) * sizeof(t_regstate));
+	preg->states = al_memalloc((len + 2) * sizeof(t_regstate));
 	al_comp_group(&frag, preg, &regex);
 	preg->in = frag.in;
 	return (0);
