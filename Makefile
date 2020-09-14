@@ -36,6 +36,7 @@ SRC_FILES =	lst/al_lstadd.c \
 			math/vec/al_vec4_from_vec3.c \
 			math/al_abs.c \
 			math/al_atoi.c \
+			math/al_atof.c \
 			math/al_cos.c \
 			math/al_pow.c \
 			math/al_sin.c \
