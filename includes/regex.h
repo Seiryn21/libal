@@ -39,6 +39,13 @@ typedef struct	s_regfrag
 	t_regstate	*out;	
 }				t_regfrag;
 
+typedef struct s_regtag
+{
+	int			greedy;
+	int			*quantifier;
+	int			*groups;
+}
+
 void al_concat_regfrag(t_regfrag *dest, t_regfrag src);
 
 int al_create_groupfrag(t_regfrag *ret, t_regex *preg);

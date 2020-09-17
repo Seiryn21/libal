@@ -52,6 +52,7 @@ SRC_FILES =	lst/al_lstadd.c \
 			print/al_putstr.c \
 			print/al_putfloat.c \
 			regex/al_regcomp.c \
+			regex/al_regexec.c \
 			regex/al_regfrag.c \
 			regex/al_regfree.c \
 			str/al_strcat.c \
