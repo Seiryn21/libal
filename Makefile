@@ -7,7 +7,8 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = includes/
 
-SRC_FILES =	lst/al_lstadd.c \
+SRC_FILES =	al_jsoncreate.c \
+			lst/al_lstadd.c \
 			lst/al_lstdel.c \
 			lst/al_lstget.c \
 			lst/al_lstiter.c \

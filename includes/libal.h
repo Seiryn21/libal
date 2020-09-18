@@ -15,5 +15,6 @@
 #include "print.h"
 #include "gnl.h"
 #include "regex.h"
+#include "json.h"
 
 #endif
