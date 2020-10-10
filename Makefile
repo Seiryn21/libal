@@ -38,6 +38,7 @@ SRC_FILES =	lst/al_lstadd.c \
 			math/al_atoi.c \
 			math/al_atof.c \
 			math/al_cos.c \
+			math/al_itoa.c \
 			math/al_pow.c \
 			math/al_sin.c \
 			math/al_sqrt.c \

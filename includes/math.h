@@ -27,6 +27,8 @@ typedef struct	s_mat4
 
 int				al_atoi(char *str);
 
+char			*al_itoa(int nbr);
+
 float 			al_abs(float number);
 float			al_atof(char *str);
 float			al_cos(float theta);
