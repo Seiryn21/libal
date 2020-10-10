@@ -7,7 +7,10 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = includes/
 
-SRC_FILES =	al_jsoncreate.c \
+SRC_FILES =	json/al_jsonobject.c \
+			json/al_jsonproperty.c \
+			json/al_jsontostr.c \
+			json/al_jsonvalue.c \
 			lst/al_lstadd.c \
 			lst/al_lstdel.c \
 			lst/al_lstget.c \

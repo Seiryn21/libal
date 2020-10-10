@@ -24,7 +24,7 @@ typedef struct			s_jsonvalue
 	{
 		int				boolean;
 		char			*string;
-		float			number;
+		double			number;
 		t_jsonarray		array;
 		t_jsonobject	object;
 	};
@@ -59,5 +59,9 @@ t_jsonobject	al_json_duplicateobject(t_jsonobject object);
 void			al_json_freevalue(t_jsonvalue value);
 t_jsonvalue		al_json_initvalue(t_jsontype type, ...);
 t_jsonvalue		al_json_duplicatevalue(t_jsonvalue value);
+
+char			*al_json_objecttostr(t_jsonobject obj);
+char			*al_json_valuetostr(t_jsonvalue value);
+char			*al_json_propertytostr(t_jsonproperty property);
 
 #endif
