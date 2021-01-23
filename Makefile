@@ -7,7 +7,9 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = includes/
 
-SRC_FILES =	lst/al_lstadd.c \
+SRC_FILES =	char/al_ischar.c \
+			char/al_tocase.c \
+			lst/al_lstadd.c \
 			lst/al_lstdel.c \
 			lst/al_lstget.c \
 			lst/al_lstiter.c \
@@ -65,8 +67,10 @@ SRC_FILES =	lst/al_lstadd.c \
 			str/al_strequ.c \
 			str/al_strjoin.c \
 			str/al_strlen.c \
+			str/al_strmap.c \
 			str/al_strnew.c \
 			str/al_strsplit.c \
+			str/al_strtocase.c \
 			get_next_line.c
 
 SRCS  = $(addprefix $(SRC_DIR), $(SRC_FILES))

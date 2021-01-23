@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+#include "char.h"
 #include "str.h"
 #include "mem.h"
 #include "lst.h"
