@@ -1,5 +1,10 @@
 #include "libal.h"
 
+int al_iseof(char c)
+{
+	return (c == '\n' || c == '\r');
+}
+
 int al_isalnum(char c)
 {
 	return (al_isalpha(c) || al_isdigit(c));

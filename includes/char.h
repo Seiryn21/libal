@@ -1,6 +1,7 @@
 #ifndef CHAR_H
 #define CHAR_H
 
+int		al_iseof(char c);
 int		al_isalnum(char c);
 int		al_isalpha(char c);
 int		al_isdigit(char c);
